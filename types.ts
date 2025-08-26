@@ -19,3 +19,8 @@ export interface Project {
   codeUrl?: string;
   image: string;
 }
+
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
+}

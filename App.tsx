@@ -9,6 +9,8 @@ import Projects from './components/sections/Projects.tsx';
 import Contact from './components/sections/Contact.tsx';
 import Footer from './components/layout/Footer.tsx';
 import ThreeScene from './components/three/Scene.tsx';
+import BackToTopButton from './components/ui/BackToTopButton.tsx';
+import ChatWidget from './components/ui/ChatWidget.tsx';
 
 const App: React.FC = () => {
   return (
@@ -31,6 +33,8 @@ const App: React.FC = () => {
         </main>
         <Footer />
       </div>
+      <BackToTopButton />
+      <ChatWidget />
     </div>
   );
 };

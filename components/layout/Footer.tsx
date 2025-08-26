@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Github } from 'lucide-react';
+import { Linkedin, Github, Mail } from 'lucide-react';
 import { personalInfo } from '../../data/content.ts';
 import { Tooltip } from '../ui/Section.tsx';
 
@@ -26,6 +26,21 @@ const Footer: React.FC = () => {
               </motion.div>
             </motion.a>
           </Tooltip>
+          <Tooltip text="Email Me">
+            <motion.a
+              href={`mailto:${personalInfo.contact.email}`}
+              aria-label="Send an email"
+              whileHover={{ y: -3 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              <motion.div
+                className="transition-colors text-secondary"
+                whileHover={{ color: '#d946ef' }}
+              >
+                <Mail size={24} />
+              </motion.div>
+            </motion.a>
+          </Tooltip>
           <Tooltip text="GitHub">
             <motion.a
               href={personalInfo.socials.github}
@@ -44,6 +59,12 @@ const Footer: React.FC = () => {
             </motion.a>
           </Tooltip>
         </div>
+        <a 
+          href={`mailto:${personalInfo.contact.email}`} 
+          className="inline-block mb-4 text-secondary hover:text-primary transition-colors duration-300"
+        >
+          {personalInfo.contact.email}
+        </a>
         <p>&copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
       </div>
     </footer>
