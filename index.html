@@ -63,6 +63,27 @@
         background-color: #050507; /* Corresponds to 'base' color to prevent white flash on scroll */
       }
     </style>
+    <style>
+      @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+      }
+      @keyframes light-trail-spin {
+        to { --angle: 360deg; }
+      }
+      .light-trail-card {
+        --angle: 0deg;
+        background: conic-gradient(
+          from var(--angle),
+          transparent 25%,
+          #06b6d4,
+          #d946ef,
+          transparent 50%
+        );
+        animation: light-trail-spin 4s linear infinite;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">

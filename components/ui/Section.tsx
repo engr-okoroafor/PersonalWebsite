@@ -49,7 +49,7 @@ interface TooltipProps {
   position?: 'top' | 'bottom';
 }
 
-export const Tooltip: React.FC<TooltipProps> = ({ children, text, position = 'top' }) => {
+export const Tooltip: React.FC<TooltipProps> = ({ children, text, position = 'bottom' }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const tooltipVariants = {

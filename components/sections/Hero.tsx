@@ -115,15 +115,16 @@ const Hero: React.FC = () => {
           className="w-full"
           variants={itemVariants}
         >
-          <div className="relative group w-full max-w-lg mx-auto animate-tilt">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-purple via-accent-magenta to-accent-cyan rounded-3xl blur opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient-chase bg-[length:400%_400%]"></div>
-            <div className="relative bg-surface rounded-3xl p-6 text-center">
-              <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-accent-cyan to-accent-magenta">
-                I Build Futuristic Web & Mobile Apps
-              </h3>
-              <p className="mt-2 text-secondary text-base">
-                Let's turn your vision into a stunning, high-performance reality.
-              </p>
+          <div className="relative w-full max-w-lg mx-auto animate-tilt">
+            <div className="light-trail-card p-[2px] rounded-3xl">
+              <div className="bg-surface rounded-[22px] p-6 text-center shadow-lg shadow-accent-purple/10">
+                <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-accent-cyan to-accent-magenta">
+                  I Build Futuristic Web & Mobile Apps
+                </h3>
+                <p className="mt-2 text-secondary text-base">
+                  Let's turn your vision into a stunning, high-performance reality.
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
