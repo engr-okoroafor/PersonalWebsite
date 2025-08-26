@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chukwudifu Uzoma Okoroafor | Software Developer</title>
+    <meta name="description" content="Experienced Full-Stack Software Developer with 5+ years of expertise in building scalable and innovative web applications.">
+    <meta property="og:title" content="Chukwudifu Uzoma Okoroafor | Software Developer Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Chukwudifu Uzoma Okoroafor, showcasing skills, projects, and experience in modern web development.">
+    <meta property="og:image" content="https://picsum.photos/1200/630">
+    <meta property="og:type" content="website">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'base': '#050507',
+              'surface': '#101014',
+              'panel': 'rgba(30, 30, 35, 0.5)',
+              'primary': '#E4E4E7',
+              'secondary': '#A0A0A9',
+              'accent-cyan': '#06b6d4',
+              'accent-magenta': '#d946ef',
+              'accent-purple': '#8b5cf6',
+              'accent-lime': '#a3e635',
+            },
+            borderRadius: {
+              '3xl': '1.5rem',
+              '4xl': '2rem',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'text-gradient': 'text-gradient 1.5s linear infinite',
+              'tilt': 'tilt 10s infinite linear',
+              'gradient-chase': 'gradient-chase 3s ease-in-out infinite',
+            },
+            keyframes: {
+              'text-gradient': {
+                'to': {
+                  'backgroundPosition': '200% center',
+                },
+              },
+              'tilt': {
+                '0%, 100%': { transform: 'rotate(-1.5deg)' },
+                '50%': { transform: 'rotate(1.5deg)' },
+              },
+              'gradient-chase': {
+                '0%, 100%': { 'background-position': '0% 50%' },
+                '50%': { 'background-position': '100% 50%' },
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      html, body {
+        background-color: #050507; /* Corresponds to 'base' color to prevent white flash on scroll */
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.12",
+    "lucide-react": "https://esm.sh/lucide-react@^0.541.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.3.0",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4",
+    "three": "https://esm.sh/three@^0.179.1",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-base text-primary font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
