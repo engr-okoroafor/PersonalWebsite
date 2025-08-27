@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -35,7 +36,6 @@ const Hero: React.FC = () => {
     document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center text-center lg:text-left">
       <motion.div 
@@ -45,7 +45,10 @@ const Hero: React.FC = () => {
         animate="visible"
       >
         <div className="flex flex-col lg:flex-row items-center gap-12">
-            <motion.div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-accent-purple/50 shadow-2xl shadow-accent-purple/20" variants={itemVariants}>
+            <motion.div 
+                className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-accent-purple/50 shadow-2xl shadow-accent-purple/20 flex items-center justify-center bg-surface" 
+                variants={itemVariants}
+            >
                 <motion.img
                     src={personalInfo.avatar}
                     alt={`Photo of ${personalInfo.name}`}
